@@ -1,0 +1,13 @@
+services:
+  research-platform:
+    build:
+      args:
+        - az_sd_psql_host=${AZ_SD_PSQL_HOST}
+        - az_sd_psql_user=${AZ_SD_PSQL_USER}
+        - az_sd_psql_pwd=${AZ_SD_PSQL_PWD}
+        - az_sd_es_host=${AZ_SD_ES_HOST}
+        - az_sd_es_user=${AZ_SD_ES_USER}
+        - az_sd_es_pwd=${AZ_SD_ES_PWD}
+    image: csssdemocr.azurecr.io/azureml-env-base-sd:latest
+
+
